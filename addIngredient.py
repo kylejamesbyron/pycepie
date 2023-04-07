@@ -1,26 +1,26 @@
 #add ingredient
 
 # To add values
-os.system('clear')
-title = input("title: ")
-author = input("author: ")
-genre = input("genre: ")
-description = input("description: ")
-os.system('clear')
- print("RECORD TO REVIEW:")
- print('Title:')
-  print(title)
-        print('Author:')
-        print(author)
-        print('Genre:')
-        print(genre)
-        print('Description:')
-        print(description)
-        okay = input("Type OK to commit: ")
-     #  To commit changes
-        if okay == "OK":
-    # To Insert Values
-            cursor.execute("INSERT INTO media (title, author, genre, description) values (?, ?, ?, ?)", 
-              (title, author, genre, description))
+
+ingredient = input("ingredient: ")
+amount = input("amount: ")
+measure = input("measure: ")
+
+print("RECORD TO REVIEW:")
+print('ingredient:')
+print(ingredient)
+print('amount:')
+print(amount)
+print('measure:')
+print(measure)
+okay = input("Type OK to commit: ")
+ #  To commit changes
+if okay == "OK":
+# To Insert Values
+	cursor.execute("INSERT INTO media (ingredient, amount, measure) values (?, ?, ?)", 
+              (ingredient, amount, measure))
     #commit connection:
-            connection.commit()
+	connection.commit()
+else:
+	print("Cancelled")
+
