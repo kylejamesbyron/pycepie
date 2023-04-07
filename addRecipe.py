@@ -6,6 +6,6 @@ cursor = connection.cursor()
 newTable = input("Recipe: ")
 
 #input headers as list
-cursor.execute("CREATE TABLE newTable (id INTEGER PRIMARY KEY AUTOINCREMENT, ingredient TEXT, amount INTEGER, genre TEXT, measure TEXT)") 
+cursor.execute("CREATE TABLE newTable (ingredient TEXT, amount INTEGER, measure TEXT)") 
 
 # try this Add [newTable] 
