@@ -1,5 +1,9 @@
 #add ingredient
 
+import sqlite3
+connection = sqlite3.connect("recipes.db")
+cursor = connection.cursor()
+
 # To add values
 
 ingredient = input("ingredient: ")
