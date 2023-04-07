@@ -9,5 +9,3 @@ newTable = input("Recipe: ")
 cursor.execute("CREATE TABLE newTable (id INTEGER PRIMARY KEY AUTOINCREMENT, ingredient TEXT, amount INTEGER, genre TEXT, measure TEXT)") 
 
 # try this Add [newTable] 
-
-cu
